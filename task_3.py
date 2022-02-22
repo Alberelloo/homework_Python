@@ -1,22 +1,14 @@
-# 3. Пользователь вводит месяц в виде целого числа от 1 до 12. Сообщить, к какому времени года относится
-# месяц (зима, весна, лето, осень). Напишите решения через list и dict.
+# 3. Реализовать функцию my_func(), которая принимает три позиционных аргумента и возвращает сумму наибольших двух аргументов.
 
-month = int(input('Введите месяц: '))
+def summ(num_1,num_2,num_3):
+    nums = [num_1,num_2,num_3]
+    nums.sort()
+    summ = nums[1] + nums[2]
+    return(summ)
 
-list = ['winter', 'winter', 'spring', 'spring', 'spring', 'summer', 'summer', 'summer', 'fall', 'fall', 'fall', 'winter']
-print(list[month - 1])
+num_1 = int(input('Введите число: '))
+num_2 = int(input('Введите число: '))
+num_3 = int(input('Введите число: '))
 
-# year_dict = {1 : 'winter', 
-#              2 : 'winter',
-#              3 : 'spring',
-#              4 : 'spring',
-#              5 : 'spring',
-#              6 : 'summer',
-#              7 : 'summer',
-#              8 : 'summer',
-#              9 : 'fall',
-#              10 : 'fall',
-#              11 : 'fall',
-#              12 : 'winter',
-#             }
-# print(year_dict[month])
+summ = summ(num_1,num_2,num_3)
+print(summ)
