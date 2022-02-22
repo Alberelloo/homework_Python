@@ -5,7 +5,7 @@ user_input = input('')
 
 def int_func(user_input):
     return user_input.title()
-print(int_func(user_input))
+# print(int_func(user_input))
 
 # 7. Продолжить работу над заданием. В программу должна попадать строка из слов, разделённых пробелом. Каждое слово состоит из латинских
 # букв в нижнем регистре. Нужно сделать вывод исходной строки, но каждое слово должно начинаться с заглавной буквы. Используйте написанную
@@ -13,7 +13,7 @@ print(int_func(user_input))
 
 def title(user_input):
     input = user_input.split()
-    for i in range(len(input)):
+    for i in input:
         return int_func(user_input)
 
 print(title(user_input))

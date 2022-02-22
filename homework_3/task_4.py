@@ -6,7 +6,7 @@ def power(x, y):
     mult = 1
     for i in range(abs(y)):
         mult *= x
-    print(1/ mult)
+    print(1 / mult)
 
 x = float(input('Введите "x": '))
 y = int(input('Введите "y": '))
